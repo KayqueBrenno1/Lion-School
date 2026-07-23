@@ -47,64 +47,6 @@ header {
 main {
     display: flex;
     flex-grow: 1;
-}
-
-footer {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 140px;
-    background-color: var(--primary-color);
-    justify-content: space-evenly;
-    color: white;
-}
-
-.frame {
-    display: flex;
-    justify-content: space-between;
-    width: 87%;
-    align-items: center;
-}
-
-.info {
-    display: flex;
-    gap: 20px;
-}
-
-.info .icons {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.dados {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.copyright {
-    font-size: 20px;
-}
-
-.redes-sociais {
-    display: flex;
-    gap: 20px;
-}
-
-.border {
-    display: flex;
-    width: 48px;
-    height: 48px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100%;
-    border: 2px solid white;
-}
-
-main {
-    display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -168,4 +110,91 @@ main {
 .redes span {
     font-size: 60px;
     color: white;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 140px;
+    background-color: var(--primary-color);
+    justify-content: space-evenly;
+    color: white;
+}
+
+.frame {
+    display: flex;
+    justify-content: space-between;
+    width: 87%;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    gap: 20px;
+}
+
+.info .icons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.copyright {
+    font-size: 20px;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 20px;
+}
+
+.border {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+
+/* RESPONSIVIDADE MOBILE */
+@media (max-width: 375px) {
+    header {
+        display: flex;
+        padding: 0 20px;
+    }
+
+    .sair span {
+        display: none;
+    }
+    
+    .sair img {
+        width: 34px;
+        height: 30px;
+    }
+
+    .hero {
+        margin-top: 50px;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .hero-left {
+        width: 280px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .hero-left img {
+        display: none;
+    }
 }
