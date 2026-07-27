@@ -169,14 +169,13 @@ footer {
 /* RESPONSIVIDADE MOBILE */
 @media (max-width: 375px) {
     header {
-        display: flex;
-        padding: 0 20px;
+        padding: 10px 20px;
     }
 
     .sair span {
         display: none;
     }
-    
+
     .sair img {
         width: 34px;
         height: 30px;
@@ -196,5 +195,55 @@ footer {
 
     .hero-left img {
         display: none;
+    }
+
+    .hero-center img {
+        width: 194px;
+        height: 331px;
+    }
+
+    .hero-right {
+        align-items: center;
+        margin-bottom: 70px;
+    }
+
+    .btn-ds {
+        display: flex;
+        width: 175px;
+        height: 175px;
+    }
+
+    .btn-ds img {
+    display: none;
+    }
+
+    .redes {
+        display: flex;
+        width: 175px;
+        height: 175px;
+    }
+
+    .redes img {
+    display: none;
+    }
+
+    .redes span {
+        font-size: 40px;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .frame {
+        flex-direction: column;
+        height: 360px;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .copyright {
+        font-size: 12px;
+        order: 3;
     }
 }
