@@ -78,7 +78,11 @@ main {
     gap: 50px;
 }
 
-.btn-ds {
+button {
+    cursor: pointer;
+}
+
+.botoes {
     display: flex;
     width: 400px;
     height: 200px;
@@ -88,28 +92,22 @@ main {
     gap: 20px;
     border: none;
     box-shadow: 12px 12px 6px #3347B080;
+    transition: 0.3s;
 }
 
-.btn-ds span {
+.botoes span {
     font-size: 64px;
     color: white;
 }
 
-.redes {
+.icon-curso {
     display: flex;
-    width: 400px;
-    height: 200px;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--primary-color);
-    gap: 20px;
-    border: none;
-    box-shadow: 12px 12px 6px #3347B080;
+    width: 100px;
 }
 
-.redes span {
-    font-size: 60px;
-    color: white;
+.botoes:hover {
+    transform: translateY(-2.5px) scale(1);
+
 }
 
 footer {

@@ -3,7 +3,7 @@
 import { renderizarPagina } from "../main.js"
 import { getCursos, getCurso } from "../router/curso.js"
 
-export function criarHome() {
+export async function criarHome() {
     const hero = document.createElement('div')
     hero.classList.add('hero')
 
@@ -33,29 +33,24 @@ export function criarHome() {
 
     const buttonDS = document.createElement('button')
     buttonDS.classList.add('btn-ds')
+    
+    let cursos = await getCursos()
+    cursos.forEach(function (curso) {
+        const button = document.createElement('button')
+        button.classList.add('botoes')
+        button.onclick = () => renderizarPagina('curso')
 
-    const imgButtonDS = document.createElement('img')
-    imgButtonDS.src = '../../img/logo-DS.png'
-    imgButtonDS.alt = 'Logo Desenvolvimento de Sistemas'
+        const iconCurso = document.createElement('img')
+        iconCurso.classList.add('icon-curso')
+        iconCurso.src = curso.icon
+        iconCurso.alt = `Ícone do curso de ${curso.nome}`
 
-    const spanButtonDS = document.createElement('span')
-    spanButtonDS.textContent = 'DS'
+        const spanCurso = document.createElement('span')
+        spanCurso.textContent = curso.sigla
 
-    buttonDS.append(imgButtonDS, spanButtonDS)
-
-    const buttonRedes = document.createElement('button')
-    buttonRedes.classList.add('redes')
-
-    const imgButtonRDS = document.createElement('img')
-    imgButtonRDS.src = '../../img/logo-DS.png'
-    imgButtonRDS.alt = 'Logo Redes'
-
-    const spanButtonRDS = document.createElement('span')
-    spanButtonRDS.textContent = 'REDES'
-
-    buttonRedes.append(imgButtonRDS, spanButtonRDS)
-
-    heroRight.append(buttonDS, buttonRedes)
+        button.append(iconCurso, spanCurso)
+        heroRight.appendChild(button)
+    })
 
     hero.append(heroLeft, heroCenter, heroRight)
 
