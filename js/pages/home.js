@@ -38,7 +38,8 @@ export async function criarHome() {
     cursos.forEach(function (curso) {
         const button = document.createElement('button')
         button.classList.add('botoes')
-        button.onclick = () => renderizarPagina('curso')
+        button.id = 'botoes'
+        button.onclick = () => renderizarPagina('curso', curso.id)
 
         const iconCurso = document.createElement('img')
         iconCurso.classList.add('icon-curso')
