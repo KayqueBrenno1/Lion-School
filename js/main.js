@@ -1,8 +1,8 @@
 'use strict'
 
 import { criarHome } from './pages/home.js'
-/* import { criarCurso } from './pages/cursos.js'
-import { criarAluno } from './pages/alunos.js' */
+/* import { criarCurso } from './pages/cursos.js' */
+/* import { criarAluno } from './pages/alunos.js' */
 
 const paginas = {
     home: {
@@ -12,8 +12,8 @@ const paginas = {
     /* curso: {
         titulo: 'Alunos do curso',
         renderizar: criarCurso
-    },
-    aluno: {
+    }, */
+    /*aluno: {
         titulo: 'Dados do aluno',
         renderizar: criarAluno
     } */

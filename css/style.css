@@ -51,6 +51,61 @@ main {
     justify-content: space-evenly;
 }
 
+footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 140px;
+    background-color: var(--primary-color);
+    justify-content: space-evenly;
+    color: white;
+}
+
+.frame {
+    display: flex;
+    justify-content: space-between;
+    width: 87%;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    gap: 20px;
+}
+
+.info .icons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.copyright {
+    font-size: 20px;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 20px;
+}
+
+.border {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+
+            /* Tela HOME */
 .hero {
     display: flex;
     width: 87%;
@@ -110,61 +165,7 @@ button {
 
 }
 
-footer {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 140px;
-    background-color: var(--primary-color);
-    justify-content: space-evenly;
-    color: white;
-}
-
-.frame {
-    display: flex;
-    justify-content: space-between;
-    width: 87%;
-    align-items: center;
-}
-
-.info {
-    display: flex;
-    gap: 20px;
-}
-
-.info .icons {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.dados {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.copyright {
-    font-size: 20px;
-}
-
-.redes-sociais {
-    display: flex;
-    gap: 20px;
-}
-
-.border {
-    display: flex;
-    width: 48px;
-    height: 48px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100%;
-    border: 2px solid white;
-}
-
-/* RESPONSIVIDADE MOBILE */
+/* RESPONSIVIDADE MOBILE - HOME */
 @media (max-width: 375px) {
     header {
         padding: 10px 20px;
@@ -245,3 +246,5 @@ footer {
         order: 3;
     }
 }
+
+/* Tela Alunos do Curso */
