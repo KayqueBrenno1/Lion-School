@@ -172,7 +172,7 @@ button {
 
 /* RESPONSIVIDADE MOBILE - HOME */
 @media (max-width: 375px) {
-    header {
+    .header-logo {
         padding: 10px 20px;
     }
 
@@ -211,27 +211,17 @@ button {
         margin-bottom: 70px;
     }
 
-    .btn-ds {
+    .botoes {
         display: flex;
         width: 175px;
         height: 175px;
     }
 
-    .btn-ds img {
+    .botoes img {
         display: none;
     }
 
-    .redes {
-        display: flex;
-        width: 175px;
-        height: 175px;
-    }
-
-    .redes img {
-        display: none;
-    }
-
-    .redes span {
+    .botoes span {
         font-size: 40px;
     }
 
@@ -365,6 +355,7 @@ button {
 .card.cursando { 
     background-color: var(--primary-color); 
 }
+
 .card.finalizado { 
     background-color: var(--golden); 
 }
@@ -388,4 +379,32 @@ button {
 .main-turma {
     display: flex;
     flex-direction: column;
+}
+
+/* RESPONSIVIDADE MOBILE - TURMAS */
+@media (max-width: 375px) {
+    .header-status {
+        height: 80px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-alunos h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .container {
+    grid-template-columns: repeat(1, 200px);
+    }
+
+    .box {
+        width: 15px;
+        height: 15px;
+    }
+
+    .status-right {
+        font-size: 13px;
+    }
 }
