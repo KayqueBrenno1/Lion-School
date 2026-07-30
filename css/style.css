@@ -1,6 +1,9 @@
 :root {
     --primary-color: #3347B0;
     --golden: #e5b657;
+    --color-column: #EEEFF8;
+    --reprovado-color: #C11010;
+    --color-recuperacao: #E5B657;
 }
 
 body {
@@ -352,12 +355,12 @@ button {
     transition: transform 0.3s ease;
 }
 
-.card.cursando { 
-    background-color: var(--primary-color); 
+.card.cursando {
+    background-color: var(--primary-color);
 }
 
-.card.finalizado { 
-    background-color: var(--golden); 
+.card.finalizado {
+    background-color: var(--golden);
 }
 
 .card img {
@@ -396,7 +399,7 @@ button {
     }
 
     .container {
-    grid-template-columns: repeat(1, 200px);
+        grid-template-columns: repeat(1, 200px);
     }
 
     .box {
@@ -407,4 +410,107 @@ button {
     .status-right {
         font-size: 13px;
     }
+}
+
+/* TELA DE INFORMAÇÕES DO ALUNO - ALUNO */
+.main-aluno {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-aluno {
+    display: flex;
+    width: 87%;
+    justify-content: space-between;
+}
+
+.caixa {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+.aluno {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.aluno img {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 2px solid #3347B0;
+}
+
+.aluno span {
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: 400;
+    text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.4);
+}
+
+.grafico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.columns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.columns span {
+    font-size: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 16px;
+    height: 300px;
+    background-color: var(--color-column);
+    justify-content: flex-end;
+}
+
+.nota {
+    font-weight: bold;
+    text-shadow: 3px 3px 9px rgba(0, 0, 0, 0.4);
+}
+
+.sigla {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-shadow: 3px 3px 9px rgba(0, 0, 0, 0.4);
+}
+
+.valor {
+    display: flex;
+    height: 67%;
+    background-color: #E5B657;
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0 0 15px 2px #E5B657;
+}
+
+.aprovado {
+    background-color: var(--primary-color);
+    box-shadow: 0 0 15px 2px var(--primary-color);
+}
+
+.reprovado {
+    background-color: var(--reprovado-color);
+    box-shadow: 0 0 3px 1px var(--reprovado-color);
+}
+
+.recuperacao {
+    background-color: var(--color-recuperacao);
+    box-shadow: 0 0 15px 2px var(--color-recuperacao);
 }

@@ -127,6 +127,8 @@ export async function criarTurma(curso) {
 
         card.append(imagem, nome)
 
+        card.onclick = () => renderizarPagina('aluno', aluno.id)
+
         containerCards.append(card)
     })
 

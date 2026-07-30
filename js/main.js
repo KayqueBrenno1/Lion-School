@@ -15,7 +15,7 @@ const paginas = {
         classMain: 'main-turma',
         renderizar: criarTurma
     },
-    /*aluno: {
+    /* aluno: {
         titulo: 'Dados do aluno',
         classMain: 'main-aluno',
         renderizar: criarAluno
