@@ -1,20 +1,23 @@
 'use strict'
 
 import { criarHome } from './pages/home.js'
-/* import { criarCurso } from './pages/cursos.js' */
+import { criarTurma } from './pages/turma.js'
 /* import { criarAluno } from './pages/alunos.js' */
 
 const paginas = {
     home: {
         titulo: 'Lion School',
+        classMain: 'main-home',
         renderizar: criarHome
     },
-    /* curso: {
+    turma: {
         titulo: 'Alunos do curso',
-        renderizar: criarCurso
-    }, */
+        classMain: 'main-turma',
+        renderizar: criarTurma
+    },
     /*aluno: {
         titulo: 'Dados do aluno',
+        classMain: 'main-aluno',
         renderizar: criarAluno
     } */
 }
@@ -22,9 +25,12 @@ const paginas = {
 export async function renderizarPagina(nomePagina, id = null) {
     const main = document.getElementById('main')
 
-    const pagina = await paginas[nomePagina].renderizar(id)
-    document.title = paginas[nomePagina].titulo
-
+    const paginaAtual = paginas[nomePagina]
+    document.title = paginaAtual.titulo
+    
+    const pagina = await paginaAtual.renderizar(id)
+    
+    main.className = paginaAtual.classMain
     main.replaceChildren(pagina)
 }
 

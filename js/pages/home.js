@@ -39,7 +39,7 @@ export async function criarHome() {
         const button = document.createElement('button')
         button.classList.add('botoes')
         button.id = 'botoes'
-        button.onclick = () => renderizarPagina('curso', curso.id)
+        button.onclick = () => renderizarPagina('turma', curso)
 
         const iconCurso = document.createElement('img')
         iconCurso.classList.add('icon-curso')
