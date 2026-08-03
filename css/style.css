@@ -415,6 +415,7 @@ button {
 /* TELA DE INFORMAÇÕES DO ALUNO - ALUNO */
 .main-aluno {
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: center;
 }
@@ -494,10 +495,7 @@ button {
 
 .valor {
     display: flex;
-    height: 67%;
-    background-color: #E5B657;
     border-radius: 4px 4px 0 0;
-    box-shadow: 0 0 15px 2px #E5B657;
 }
 
 .aprovado {
@@ -513,4 +511,44 @@ button {
 .recuperacao {
     background-color: var(--color-recuperacao);
     box-shadow: 0 0 15px 2px var(--color-recuperacao);
+}
+
+/* RESPONSIVIDADE MOBILE - TURMAS */
+@media (max-width: 375px) {
+    .hero-aluno {
+        align-items: center;
+        flex-direction: column;
+        gap: 80px;
+        padding: 80px 0;
+    }
+
+    .caixa {
+        width: 250px;
+        height: 350px;
+        box-shadow: 8px 8px 10px #00000044;
+    }
+
+    .aluno img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .aluno span {
+        width: 150px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .grafico {
+        box-shadow: none;
+    }
+
+    .column {
+        width: 12px;
+        height: 267px;
+    }
+
+    .columns span {
+        font-size: 16px;
+    }
 }

@@ -2,7 +2,7 @@
 
 import { criarHome } from './pages/home.js'
 import { criarTurma } from './pages/turma.js'
-/* import { criarAluno } from './pages/alunos.js' */
+import { criarAluno } from './pages/aluno.js'
 
 const paginas = {
     home: {
@@ -15,11 +15,11 @@ const paginas = {
         classMain: 'main-turma',
         renderizar: criarTurma
     },
-    /* aluno: {
+    aluno: {
         titulo: 'Dados do aluno',
         classMain: 'main-aluno',
         renderizar: criarAluno
-    } */
+    }
 }
 
 export async function renderizarPagina(nomePagina, id = null) {
