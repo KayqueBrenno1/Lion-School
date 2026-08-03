@@ -14,7 +14,7 @@ export async function criarHome() {
     textHeroLeft.innerHTML = 'Escolha um <span>curso</span> para gerenciar'
 
     const imgHeroLeft = document.createElement('img')
-    imgHeroLeft.src = '../../img/devices.png'
+    imgHeroLeft.src = './img/devices.png'
     imgHeroLeft.alt = 'Dispositivos (celular, tablet e computador)'
 
     heroLeft.append(textHeroLeft, imgHeroLeft)
@@ -23,7 +23,7 @@ export async function criarHome() {
     heroCenter.classList.add('hero-center')
 
     const imgHeroCenter = document.createElement('img')
-    imgHeroCenter.src = '../../img/studant.png'
+    imgHeroCenter.src = './img/studant.png'
     imgHeroCenter.alt = 'Estudante'
 
     heroCenter.append(imgHeroCenter)
