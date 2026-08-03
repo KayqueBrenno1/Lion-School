@@ -25,13 +25,26 @@ const paginas = {
 export async function renderizarPagina(nomePagina, id = null) {
     const main = document.getElementById('main')
 
-    const paginaAtual = paginas[nomePagina]
-    document.title = paginaAtual.titulo
-    
-    const pagina = await paginaAtual.renderizar(id)
-    
-    main.className = paginaAtual.classMain
-    main.replaceChildren(pagina)
+    // animação de saída
+    main.classList.add('fade-out')
+
+    setTimeout(async function() {
+        const paginaAtual = paginas[nomePagina]
+
+        document.title = paginaAtual.titulo
+
+        const pagina = await paginaAtual.renderizar(id)
+
+        main.className = paginaAtual.classMain
+        main.replaceChildren(pagina)
+
+        // animação de entrada
+        main.classList.remove('fade-out')
+        main.classList.add('fade-in')
+
+        setTimeout(() => main.classList.remove('fade-in'), 300)
+
+    }, 300)
 }
 
 renderizarPagina('home')
