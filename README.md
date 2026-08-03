@@ -4,7 +4,9 @@ Atividade Front-End desenvolvida no Senai, usando uma API disponibilizada pelo p
 
 ## Sobre o projeto
 
-A aplicação apresenta uma interface dinâmica desenvolvida com **HTML**, **CSS** e **JavaScript (ES Modules)**, consumindo dados de uma API REST através do método `fetch`. O design da atividade foi feito de acordo com o protótipo do figma
+A aplicação apresenta uma interface dinâmica desenvolvida com **HTML**, **CSS** e **JavaScript (ES Modules)**, consumindo dados de uma API REST.
+
+O design da atividade foi feito de acordo com o protótipo do figma
 
 **Link do Figma:** [Clique aqui](https://www.figma.com/design/NMubBoEN2tDIfWsTO1EJN9/Lion-School--SENAI?node-id=0-1&m=dev&t=1dDophGwDQd9QAcL-1)
 
@@ -133,67 +135,3 @@ GET /alunos?status=cursando
 ```
 
 ---
-
-## ▶️ Como executar
-
-1. Clone o repositório
-
-```bash
-git clone <url-do-repositorio>
-```
-
-2. Abra a pasta do projeto.
-
-3. Execute o projeto utilizando uma extensão como **Live Server** no Visual Studio Code.
-
-4. A aplicação irá consumir automaticamente a API da Lion School.
-
----
-
-## 🧩 Organização do código
-
-O projeto foi organizado utilizando módulos JavaScript.
-
-### `main.js`
-
-Responsável pelo controle das páginas e pela navegação entre elas.
-
-### `pages/`
-
-Contém a construção dinâmica das telas:
-
-- Home
-- Turma
-- Aluno
-
-### `router/`
-
-Responsável pelas requisições para a API utilizando `fetch`.
-
----
-
-## 🎯 Objetivos de aprendizagem
-
-Este projeto teve como objetivo praticar:
-
-- Manipulação do DOM
-- JavaScript modular
-- Consumo de APIs REST
-- Programação assíncrona (`async/await`)
-- Renderização dinâmica de elementos
-- Organização de código em módulos
-- Navegação entre páginas sem recarregar o navegador
-
----
-
-## 👨‍💻 Desenvolvedor
-
-Projeto desenvolvido como atividade de Front-End.
-
-**Aluno:** Kayque Brenno
-
----
-
-## 📄 Licença
-
-Este projeto possui finalidade exclusivamente educacional.
